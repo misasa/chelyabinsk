@@ -17,12 +17,12 @@ cbk.lame.drop.dharma <- function(pmlame,column=FALSE,verbose=FALSE) {
   blank_row <- apply(pmlame0, 1, function(x) all(is.na(x)))
 
   ## remove useless lines
-  pmlame1   <- pmlame[!blank_row, ]
+  pmlame1   <- pmlame[!blank_row, ,drop=F]
 
   ## filter columns out
   if (column) {
     blank_col <- apply(pmlame0, 2, function(x) all(is.na(x)))
-    pmlame1   <- pmlame1[ ,!blank_col]
+    pmlame1   <- pmlame1[ ,!blank_col,drop=F]
   }
   
   return(pmlame1)

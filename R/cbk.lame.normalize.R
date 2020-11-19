@@ -42,7 +42,7 @@ cbk.lame.normalize <- function(pmlame,reflame,suffix_after_chem=NULL,verbose=FAL
   }
 
   if (nrow(reflame) == 1){ # in case divide by CI chondrite
-    reflame1   <- cbk.lame.rep(reflame0[,chem],nrow(pmlame))
+    reflame1   <- cbk.lame.rep(reflame0[,chem],nrow(pmlame),direction='v')
   } else if (nrow(pmlame) == nrow(reflame)) { # accept multi-row reflame
     reflame1   <- reflame0[,chem]
   } else {
@@ -52,7 +52,7 @@ cbk.lame.normalize <- function(pmlame,reflame,suffix_after_chem=NULL,verbose=FAL
   }
 
   if(is.null(suffix_after_chem)){
-    meanlame1    <- meanlame0[,chem]
+    meanlame1    <- meanlame0[,chem,drop=F]
     meanlame2    <- meanlame1 / reflame1
 
     ## when errorlame is significant

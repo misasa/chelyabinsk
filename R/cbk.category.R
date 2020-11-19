@@ -25,7 +25,7 @@ cbk.category <- function(pmlfile_or_stone=NULL) {
     pmlame    <- cbk.lame.drop.dharma(pmlame0,column=TRUE)
     ChemList  <- colnames(pmlame)
     REEList   <- c("La","Ce","Pr","Nd","Sm","Eu","Gd","Tb","Dy","Ho","Er","Tm","Yb","Lu")
-    MajorList <- c("Na2O","MgO","Al2O3","SiO2","P2O5","K2O","CaO","TiO2","Cr2O3","MnO","FeO","Fe2O3","NiO","Na","Mg","Al","Si","P","K","Ca","Ti","Cr","Mn","Fe","Ni")
+    MajorList <- c("Na2O","MgO","Al2O3","SiO2","P2O5","K2O","CaO","TiO2","Cr2O3","MnO","FeO","Fe2O3","NiO","Na","Mg","Al","Si","P","K","Ca","Ti","Cr","Mn","Fe","Ni","H")
     OxyList   <- c("d18O","d17O")
     LiList    <- "d7Li"
     PbList    <- c("Pb206zPb204","Pb207zPb204","Pb208zPb204")

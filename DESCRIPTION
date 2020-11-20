@@ -1,7 +1,7 @@
 Package: chelyabinsk
 Type: Package
 Title: Express geochemical datasets
-Version: 1.0.7
+Version: 1.0.8
 Date: 2019-11-30
 Author: Tak Kunihiro
 Maintainer: Tak Kunihiro <tkk@misasa.okayama-u.ac.jp>
